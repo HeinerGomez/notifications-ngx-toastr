@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="row" >
+    <div class="col-12 col-xs-12 col-md-6" [ngStyle]="{'margin-top': '50px'}">
+      <h3>Toast info</h3>
+      <hr>
+      <br>
+      <div>
+        <input class="form-control" id="message" name="message" #message="ngModel" [(ngModel)]="messageInfo.message" />
+        <button type="button" class="btn btn-block btn-info" (click)="presentNotifiactionInfo()" [ngStyle]="{'margin-top': '10px'}">
+          Ver
+        </button>
+      </div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-6" [ngStyle]="{'margin-top': '50px'}">
+      <h3>Toast Error</h3>
+      <hr>
+      <br>
+      <div>
+          <input class="form-control" id="message" name="message" #message="ngModel" [(ngModel)]="messageError.message" />
+        <button type="button" class="btn btn-block btn-danger" (click)="presentNotifiactionError()" [ngStyle]="{'margin-top': '10px'}">
+          Ver
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
